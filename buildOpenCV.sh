@@ -44,6 +44,13 @@ function createPackage() {
   dpkg-deb --build opencv
 }
 
-if [[ $1 -eq 'package' ]]; then
-  createPackage
-fi
+command=$1
+
+case $command in
+  package)
+    createPackage
+    ;;
+  build)
+    buildOpenCV
+    ;;
+esac
