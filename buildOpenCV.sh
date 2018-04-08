@@ -7,7 +7,7 @@ function buildOpenCV() {
   sudo apt-get update
   
   # INSTALL DEPS
-  sudo apt-get install -y build-essential cmake pkg-config
+  sudo apt-get install -y build-essential cmake pkg-config unzip
   sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
   sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
   sudo apt-get install -y libxvidcore-dev libx264-dev
