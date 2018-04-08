@@ -26,7 +26,7 @@ function buildOpenCV() {
   
   # PREPARE CONFIG
   cmake -D CMAKE_BUILD_TYPE=RELEASE \
-        -D CMAKE_INSTALL_PREFIX=$(pwd)/opencv/usr/local \
+        -D CMAKE_INSTALL_PREFIX=/usr/local \
         -D INSTALL_PYTHON_EXAMPLES=ON \
         -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-${version}/modules \
         -D BUILD_EXAMPLES=ON \
@@ -36,7 +36,7 @@ function buildOpenCV() {
   make -j4
   
   ## INSTALL
-  sudo make install
+  sudo make DESTDIR=$(pwd)/opencv/usr/local install
   #sudo ldconfig
 }
 
