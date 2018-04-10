@@ -23,3 +23,6 @@ Build the debian package and then run:
 ```
 sudo dpkg -i opencv.deb
 ```
+
+## TODO:
+The package is compiled as a dynamically linked libarary, dependencies may need to be installed if installed on the target system.  Currently the produced debian package does not have any dependencies listed.  Compiled dependencies can be found in the `./buildOpenCV.sh` script.  Runtime dependencies will possibly be the same as these.
