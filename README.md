@@ -1,6 +1,9 @@
 # opencv-arm
 Open CV Build for Raspberry Pi Arm6 and Arm7, this script installs all dependencies, fetches source and builds OpenCV for Raspberry Pis.
 
+## Releases
+Debian Packages for Armv6l and Armv7l can be found in the releases section.
+
 ## Building
 To build check out this repo onto your raspberry pi and run:
 ```
