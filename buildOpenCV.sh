@@ -36,7 +36,7 @@ function buildOpenCV() {
   make -j4
   
   ## INSTALL
-  sudo make DESTDIR=$(pwd)/opencv/usr/local install
+  sudo make DESTDIR=/$(pwd)/opencv/usr/local install
   #sudo ldconfig
 }
 

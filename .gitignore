@@ -1,0 +1,5 @@
+opencv-3.4.0
+opencv/usr/local/*
+opencv_contrib-3.4.0
+*.zip
+*.deb
