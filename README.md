@@ -25,6 +25,13 @@ The built package `opencv.deb` contains compiled binaries and should be installa
 Build the debian package and then run:
 ```
 sudo dpkg -i opencv.deb
+# Install dependent packages
+sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install -y libxvidcore-dev libx264-dev
+sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libatlas-base-dev gfortran
+
 ```
 
 ## TODO:
